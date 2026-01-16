@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+body{
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px #0000001a;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+header{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #3f7dbb;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+header h1{
+    color: #f9fdfb;
+    font-weight: 600;
+    font-size: 2rem;
+}
+header i{
+    color: #cadced;
+    font-size: 2rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+.firstDiv{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: start;
+}
+.firstDiv label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f282c;
+}
+.firstDiv input{
+    padding: 16px;
+    border: 2px solid #c9cfcf;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+}
+.firstDiv input:focus{
+    border-color: #3f7dbb;
+}
+.firstDiv input::placeholder{
+    color: #7e8180;
+    font-weight: 400;
+    font-size: 1rem;
+}
+button{
+    padding: 16px;
+    background-color: #3f7dbb;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    background-color: #335f8a;
+}
+button:focus{
+    background-color: #335f8a;
+}
+.secondDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #cce0f6;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 12px;
+}
+.secondDiv h3{
+    color: #243951;
+    font-size: 1.2rem;
+}
+
+@media (max-width:450px) {
+    main{
+        width: 90%;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    header i{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 10px;
+    }
+    .secondDiv h3{
+        font-size: 1rem;
+    }
+    .secendDiv svg{
+        width: 50px;
+        height: 50px;
+    }
+    .firstDiv input{
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    .firstDiv input::placeholder{
+        font-size: 0.9rem;
+    }
+    button{
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    .firstDiv label{
+        font-size: 0.9rem;
+    }
+}
