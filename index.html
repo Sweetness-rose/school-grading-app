@@ -48,15 +48,7 @@
       divTag.style.borderRadius = "16px"
       divTag.style.fontSize = "1rem"
 
-    } else if (userGradeInput !== Number) {
-      divTag.innerHTML = `NaN\u2757Input a number `;
-      divTag.style.backgroundColor = "#ffffff"
-      divTag.style.color = "#282e35"
-      divTag.style.padding = "16px"
-      divTag.style.borderRadius = "16px"
-      divTag.style.fontSize = "1rem"
-
-    }  else if (userGradeInput >= 80) {
+    } else if (userGradeInput >= 80) {
       divTag.innerHTML = `"Grade: A" "Status: Excellent". Keep up the great work!`;
       divTag.style.backgroundColor = "#ffffff"
       divTag.style.color = "#282e35"
@@ -96,13 +88,21 @@
       divTag.style.borderRadius = "16px"
       divTag.style.fontSize = "1rem"
 
-    } else {
+    } else  if (userGradeInput <= 39  ) {
       divTag.innerHTML = `"Grade: F" "Status: Fail". Don't give up. Focus, practice and try again`;
       divTag.style.backgroundColor = "#ffffff"
       divTag.style.color = "#282e35"
       divTag.style.padding = "16px"
       divTag.style.borderRadius = "16px"
       divTag.style.fontSize = "1rem"
-    }
+    }  else {
+      divTag.innerHTML = `NaN\u2757Input a number between 0 - 100`;
+      divTag.style.backgroundColor = "#ffffff"
+      divTag.style.color = "#282e35"
+      divTag.style.padding = "16px"
+      divTag.style.borderRadius = "16px"
+      divTag.style.fontSize = "1rem"
+
+    }  
   }
 </script>
